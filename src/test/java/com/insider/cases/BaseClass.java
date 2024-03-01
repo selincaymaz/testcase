@@ -18,13 +18,7 @@ public class BaseClass {
 
     private String getBrowserName() {
         String browserDefault = "chrome";
-        String browserSentFromCmd = System.getProperty("browser");
-
-        if (browserSentFromCmd == null) {
-            return browserDefault;
-        } else {
-            return browserSentFromCmd;
-        }
+        return browserDefault;
     }
 
     @BeforeEach
